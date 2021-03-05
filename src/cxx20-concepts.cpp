@@ -33,10 +33,10 @@ void func2(T)
 
 // abbreviated templates:
 
-void func3(Integral)
+void func3(Integral auto)
 { std::cout << __PRETTY_FUNCTION__ << '\n'; }
 
-void func3(FloatingPoint)
+void func3(FloatingPoint auto)
 { std::cout << __PRETTY_FUNCTION__ << '\n'; }
 }
 

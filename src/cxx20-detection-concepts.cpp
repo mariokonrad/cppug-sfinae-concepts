@@ -5,7 +5,7 @@ namespace concepts_cxx20
 template <class T>
 concept HasAdd = requires(T t)
 {
-	{ t.add(int(), int()) } -> int;
+	{ t.add(int(), int()) } -> std::same_as<int>;
 };
 
 template <class T>
